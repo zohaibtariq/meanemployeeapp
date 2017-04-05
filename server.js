@@ -5,11 +5,11 @@ var mongoose = require('mongoose');
 var app = express();
 
 app.get('/', function (req,res) {
-	res.send("Hi dear!");
+	res.send("default page");
 });
 
 app.get('/home', function (req,res) {
-	res.send("Hi dear! It is my home");
+	res.send("home page");
 });
 
 app.listen(port, function(){
